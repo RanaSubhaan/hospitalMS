@@ -19,11 +19,11 @@ class OperationReport extends Model
 
     public function patient()
     {
-        return $this->belongsTo(patient::class);
+        return $this->belongsTo(Patient::class);
     }
 
     public function doctor()
     {
-        return $this->belongsTo(doctor::class);
+        return $this->belongsTo(Doctor::class);
     }
 }

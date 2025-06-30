@@ -38,14 +38,16 @@ class BirthReport extends Component
         }else{
             $this->validate([
                 'patient' => 'required',
-                'doctor' => 'required',
-                'details' => 'required',
-                ]);
+                'details' => 'required|string',
+                'doctor' => 'required|numeric',
+                // 'status' => 'required|string',
+            ]);
 
             ModelsBirthReport::create([
-                'patient'          => $this->patient,
-                'description'         => $this->details,
-                'doctor'         => $this->doctor,
+                'patient_id' => $this->patient,
+                'doctor_id' => $this->doctor,
+                'description' => $this->details,
+                // 'status' => $this->status,
             ]);
 
             $this->patient="";
@@ -53,6 +55,7 @@ class BirthReport extends Component
             $this->doctor="";
 
             session()->flash('message', 'Birth Report Created successfully.');
+            $this->reset(['patient', 'doctor', 'details']);
         }
 
     }

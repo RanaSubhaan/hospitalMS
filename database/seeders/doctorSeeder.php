@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\doctor;
-use App\Models\employee;
+use App\Models\Doctor;
+use App\Models\Employee;
 use Illuminate\Database\Seeder;
 
 class doctorSeeder extends Seeder
@@ -16,10 +16,10 @@ class doctorSeeder extends Seeder
     public function run()
     {
         Doctor::create([
-            "employee_id"=>employee::where("position","doctor")->first()->id
+            "employee_id"=>Employee::where("position","doctor")->first()->id
         ]);
         Doctor::create([
-            "employee_id"=>employee::where("position","doctor")->latest()->first()->id
+            "employee_id"=>Employee::where("position","doctor")->latest()->first()->id
         ]);
     }
 }

@@ -43,7 +43,7 @@
                                     <td>{{ $operationReport->id }}</td>
                                     <td>{{ $operationReport->patient->name }}</td>
                                     <td>{{ $operationReport->description }}</td>
-                                    <td>{{ $operationReport->doctor->employ->name }}</td>
+                                    <td>{{ $operationReport->doctor->employee->name }}</td>
                                     <td>{{ ucfirst($operationReport->status) }}</td>
                                     <td>{{ $operationReport->created_at }}</td>
                                     <td class="text-right">

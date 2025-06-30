@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-use App\Models\employee;
+use App\Models\Employee;
 
 use Illuminate\Database\Seeder;
 use Faker\Factory as Faker;
@@ -20,7 +20,7 @@ class employeeSeeder extends Seeder
 
         foreach ($positions as $position) {
             for ($i = 0; $i < 10; $i++) {
-                employee::create([
+                Employee::create([
                     'name' => $faker->name,
                     'email' => $faker->unique()->safeEmail,
                     'phone' => $faker->phoneNumber,

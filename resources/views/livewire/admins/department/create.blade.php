@@ -71,7 +71,7 @@
                             <select name="hod" wire:model.lazy="head" class="form-control" required>
                                 <option selected>Choose Head</option>
                                 @forelse ($hods as $hod)
-                                    <option value="{{ $hod->id }}">{{ $hod->doctor->employ->name }}</option>
+                                    <option value="{{ $hod->id }}">{{ $hod->doctor->employee->name }}</option>
                                 @empty
                                     <option value="" class="text-warning">No head Found!</option>
                                 @endforelse

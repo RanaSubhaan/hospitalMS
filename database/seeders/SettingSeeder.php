@@ -24,7 +24,7 @@ class SettingSeeder extends Seeder
             ],
             [
                 'key' => 'address',
-                'value' => 'xyz, abc, 1234, Nepal'
+                'value' => 'xyz, abc, 1234, Pakistan'
             ],
             [
                 'key' => 'business_phone',

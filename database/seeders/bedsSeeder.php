@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-use App\Models\beds;
+use App\Models\Beds;
 use Illuminate\Database\Seeder;
 
 class bedsSeeder extends Seeder
@@ -14,7 +14,7 @@ class bedsSeeder extends Seeder
     public function run()
     {
         for ($i=0; $i <5 ; $i++) {
-            beds::create([
+            Beds::create([
                 'room_id'          => rand(1,5)
             ]);
     }

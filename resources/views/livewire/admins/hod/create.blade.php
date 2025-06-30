@@ -7,7 +7,7 @@
             <select name="hod" wire:model.lazy="doctor" class="form-control">
                 <option value="" class="text-red">{{ __(' -- Select Doctor --') }}</option>
                 @forelse ($doctors as $doctor)
-                    <option value="{{ $doctor->id }}">{{ $doctor->employ->name }}</option>
+                    <option value="{{ $doctor->id }}">{{ $doctor->employee->name }}</option>
                 @empty
                     <option value="" class="text-red">{{ __('No Doctor Found!') }}</option>
                 @endforelse

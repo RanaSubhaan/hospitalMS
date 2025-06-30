@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\medicine;
+use App\Models\Medicine;
 use Faker\Factory as Faker;
 class medicineSeeder extends Seeder
 {

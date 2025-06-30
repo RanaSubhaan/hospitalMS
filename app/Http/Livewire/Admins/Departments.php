@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Admins;
 
+use App\Models\Block;
 use App\Models\Department;
 use App\Models\Hod;
 use App\Models\Lock;

@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Faker\Factory as Faker;
-use App\Models\block;
+use App\Models\Block;
 class blockSeeder extends Seeder
 {
     /**
@@ -17,7 +17,7 @@ class blockSeeder extends Seeder
         $faker = Faker::create();
 
         for ($i=0; $i <5 ; $i++) {
-            block::create([
+            Block::create([
                 'blockname'          => $faker->name(),
                 'blockcode'          => rand(100,500),
             ]);

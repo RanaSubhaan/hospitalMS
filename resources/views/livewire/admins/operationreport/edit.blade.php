@@ -36,7 +36,7 @@
                 <option>Choose Doctor</option>
                 @forelse ($doctors as $doctor)
                     <option value="{{ $doctor->id }}" @if ($doctor->id == $report->doctor_id) selected @endif>
-                        {{ $doctor->employ->name }}</option>
+                        {{ $doctor->employee->name }}</option>
                 @empty
                     <option value="" class="text-warning">No Doctor Found!</option>
                 @endforelse

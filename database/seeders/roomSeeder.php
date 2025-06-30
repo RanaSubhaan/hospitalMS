@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\rooms;
+use App\Models\Rooms;
 use Faker\Factory as Faker;
 
 class roomSeeder extends Seeder
@@ -20,7 +20,7 @@ class roomSeeder extends Seeder
         $departments = \App\Models\Department::all()->pluck('id')->toArray(); // Assuming you have a Department model
 
         for ($i = 0; $i < 8; $i++) { // Creating 50 rooms
-            rooms::create([
+            Rooms::create([
                 'department_id' => $faker->randomElement($departments),
                 'status' => $faker->randomElement(['available', 'occupied', 'maintenance']),
                 'type' => $faker->randomElement(['ward', 'private', 'semi-private', 'general']),

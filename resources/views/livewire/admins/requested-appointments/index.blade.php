@@ -45,14 +45,14 @@
                                     <td>{{ $request->name }}</td>
                                     <td>{{ $request->email }}</td>
                                     <td>{{ $request->phone }}</td>
-                                    <td>{{ $request->doctor->employ->name }}</td>
+                                    <td>{{ $request->doctor->employee->name }}</td>
                                     <td>{{ $request->address }}</td>
                                     <td>{{ $request->message }}</td>
                                     <td>{{ $request->stime }}</td>
                                     <td class="text-right">
 
                                         @if (
-                                            !App\Models\patient::where([
+                                            !App\Models\Patient::where([
                                                 'name' => $request->name,
                                                 'email' => $request->email,
                                                 'phone' => $request->phone,

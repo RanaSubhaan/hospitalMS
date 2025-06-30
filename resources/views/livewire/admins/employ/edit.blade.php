@@ -52,6 +52,7 @@
         <div class="form-group">
             <label for="Status">Status</label>
             <select name="Status" wire:model.lazy="status" class="form-control" required>
+                <option value="">Choose Status</option>
                 <option value="active">Active</option>
                 <option value="inactive">Inactive</option>
             </select>

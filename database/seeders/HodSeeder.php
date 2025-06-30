@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Models\doctor;
+use App\Models\Doctor;
 use Illuminate\Database\Seeder;
-use App\Models\hod;
+use App\Models\Hod;
 
 class HodSeeder extends Seeder
 {
@@ -15,11 +15,11 @@ class HodSeeder extends Seeder
      */
     public function run()
     {
-        hod::create([
-            'doctor_id'    => doctor::first()->id
+        Hod::create([
+            'doctor_id'    => Doctor::first()->id
         ]);
-        hod::create([
-            'doctor_id'    => doctor::latest()->first()->id
+        Hod::create([
+            'doctor_id'    => Doctor::latest()->first()->id
         ]);
     }
 }

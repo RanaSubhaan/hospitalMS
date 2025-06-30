@@ -64,7 +64,7 @@
                         <div class="info-inner">
                             <span class="icontop"><i class="fa fa-envelope" aria-hidden="true"></i></span>
                             <span class="iconcont"><a data-scroll
-                                    href="mailto:{{ $settings["email"] ?? 'tauseed@test.com' }}">{{ $settings["email"] ?? 'tauseed@test.com' }}</a></span>
+                                    href="mailto:{{ $settings["email"] ?? 'hafizsubhan@test.com' }}">{{ $settings["email"] ?? 'hafizsubhan@test.com' }}</a></span>
                         </div>
                         <div class="info-inner">
                             <span class="icontop"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
@@ -132,7 +132,7 @@
                                 aria-hidden="true"></i>{{ $settings["address"] ?? 'distric abc P/O xyz sorana' }}
                         </p>
                         <p><i class="fa fa-paper-plane"
-                                aria-hidden="true"></i>{{ $settings["email"] ?? 'tauseed@test.com' }}
+                                aria-hidden="true"></i>{{ $settings["email"] ?? 'hafizsubhan@test.com' }}
                         </p>
                         <p><i class="fa fa-phone"
                                 aria-hidden="true"></i>{{ $settings["phone"] ?? '123 123 123' }}</p>

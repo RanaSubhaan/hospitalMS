@@ -14,7 +14,7 @@ class BirthReport extends Model
         'patient_id',
         'doctor_id',
         'description',
-        'gender',
+        // 'status',
     ];
 
     public function patient(){

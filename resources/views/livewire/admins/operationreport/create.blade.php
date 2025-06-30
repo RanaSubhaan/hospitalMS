@@ -34,7 +34,7 @@
             <select name="Docter" class="form-control" wire:model.lazy="doctor">
                 <option>Choose Doctor</option>
                 @forelse ($doctors as $doctor)
-                    <option value="{{ $doctor->id }}">{{ $doctor->employ->name }}</option>
+                    <option value="{{ $doctor->id }}">{{ $doctor->employee->name }}</option>
                 @empty
                     <option value="" class="text-warning">No Doctor Found!</option>
                 @endforelse
@@ -46,6 +46,7 @@
         <div class="form-group">
             <label for="Status">Status</label>
             <select name="status" class="form-control" wire:model.lazy="status">
+                <option value="" selected>Choose Status</option>
                 <option value="pending">Pending</option>
                 <option value="completed">Completed</option>
             </select>
